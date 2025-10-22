@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zoë's Photobook</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('Background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Red banner across the top */
+  header {
+    width: 100%;
+    background-color: #9E2A2B;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  /* Centered “cover page” */
+  .cover {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    width: 35vw;
+    height: 85vh;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .cover h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+
+  .cover p {
+    font-size: 1.2rem;
+    color: #444;
+  }
+
+  .cover img {
+    max-width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 1.5rem;
+  }
+
+ 
+ .arrow-right{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 3%;
+      height: auto;
+  }
+
+
+.tree-right{
+      position: fixed;
+      bottom: 10px;
+      right: -10px;
+      width: 10%;
+      height: auto;
+  }
+
+.pumpkin {
+  position: fixed;   /* stays in the same place when scrolling */
+  top: 10px;         /* distance from the top of the screen */
+  width: 50px;       /* size of the pumpkin */
+  z-index: 20;       /* make sure it’s above everything else */
+}
+
+.pumpkin-right {
+  right: 20px;       /* distance from right edge */
+}
+
+</style>
+</head>
+<body>
+
+  <header>Happy 18th Birthday</header>
+
+  <div class="cover">
+    <h1>Zoë's Photobook</h1>
+    <h1>🥂</h1>
+
+    <img src="Photos/Front Cover picture.jpg" alt="Front Cover" >
+  </div>
+   
+
+<a href="Page1.html"><img src="Tree.png" class="tree-right" alt="Tree"></a>
+<a href="credits page.html"><img src="Pump-Orange.png" class="pumpkin pumpkin-right" alt="Pump" title="Credits Page"></a>
+
+
+  <a href="Page1.html"><img src="Right arrow.png" class="arrow-right" alt="Arrow" ></a>
+
+</body>
+</html>

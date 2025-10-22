@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoë's Photobook</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', serif;
+      background: url('Background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    header {
+      width: 100%;
+      background-color: #9E2A2B;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .book {
+      display: flex;
+      width: 95vw; /* leaves margin on left and right */
+      height: calc(97vh - 70px); /* leaves margin top and bottom */
+      position: relative;
+      background: white;
+      margin: 2vh 0;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .book::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background-color: #ccc;
+      z-index: 2;
+    }
+
+    .page {
+      flex: 1;
+      width: 50%;
+      padding: 2rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .page.left {
+      background: #faf9f7;
+      border-right: 1px solid #eee;
+    }
+
+    .page.right {
+      background: #fffdfa;
+    }
+
+    .page img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: contain;
+  }
+
+@media (max-width: 600px) {
+  .page img {
+    width: 95%;
+  }
+}
+
+   .small-img {
+     width: 25% !important; 
+   }
+
+   .small-img-one {
+     width: 25% !important;
+   }
+
+    .medium-img {
+     width: 60% !important;
+    }
+
+   .large-img {
+     width: 80% !important; 
+    }
+
+
+    .img-top{
+      top: 10%;
+     }
+
+    .img-middle{
+      top: 40%;
+    }
+
+
+    .img-bottom{
+      bottom: 10%;
+    }
+
+    .img-right{
+      right: 8%;
+      left: auto !important;
+      transform: none !important;
+    }
+
+    .img-right-one{
+      right: 5.75%;
+      left: auto !important;
+      transform: none !important;
+    }
+
+
+    .page img.img-left{
+      left: 8%;
+      right: auto;
+      transform: none;
+    }
+
+    .page img.img-left-one{
+      left: 5.75%;
+      right: auto;
+      transform: none;
+    }
+
+    .page img.img-left-two{
+      left: 17%;
+      right: auto;
+      transform: none;
+    }
+
+    .page img.img-left-three{
+      left: 17%;
+      right: auto;
+      transform: none;
+    }
+
+.arrow-right{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 3%;
+      height: auto;
+  }
+
+.arrow-left{
+     position:fixed;
+     bottom: 20px;
+     left: 20px;
+     width: 3%;
+     height: auto;
+}
+
+.tree-left{
+      position: fixed;
+      bottom: 10px;
+      left: -10px;
+      width: 10%;
+      height: auto;
+  }
+
+.tree-right{
+      position: fixed;
+      bottom: 10px;
+      right: -10px;
+      width: 10%;
+      height: auto;
+  }
+
+.pumpkin {
+  position: fixed;   /* stays in the same place when scrolling */
+  top: 10px;         /* distance from the top of the screen */
+  width: 50px;       /* size of the pumpkin */
+  z-index: 20;       /* make sure it’s above everything else */
+}
+
+.pumpkin-left {
+  left: 20px;        /* distance from left edge */
+}
+
+.pumpkin-right {
+  right: 20px;       /* distance from right edge */
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    DUMP!
+  </header>
+
+  <div class="book">
+    <div class="page left">
+
+      <img src="Photos/Sixth Form/flabagasted - sixthform.jpg" class="img-top img-left-one small-img" alt="flaba" title="Im absolutely flabagasted">
+
+      <img src="Photos/Sixth Form/Bird - sixthform.jpg" class="img-right-one img-bottom small-img" alt="Bird">
+
+     <img src="Photos/Dump/NGHFB.jpg" class="img-left-one img-bottom small-img" alt="NGHFB">
+
+      <img src="Photos/Dump/FOOd.jpg" class="img-right-one img-top small-img" alt="food">
+
+<video controls width=30%>
+       <source src="Photos/Dump/WTH.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+      </video>
+
+    </div>
+    <div class="page right">
+
+       <img src="Photos/Dump/Mus.jpg" class="img-right small-img-one" alt="Mus">
+
+       <img src="Photos/Dump/Pew Pew.jpg" class="img-left-two  small-img" alt="Pew Pew">
+
+       <img src="Photos/Dump/oh dear.jpg" class="img-left-three img-bottom small-img" alt="Bereal">
+
+       <img src="Photos/Dump/Comic con.jpg" class="img-left-three img-top small-img" alt="Bereal">
+
+      <img src="Photos/Dump/Blind Deaf Mute.jpg" class="img-right img-bottom small-img" alt="BDM">
+
+      <img src="Photos/Dump/Bereal.jpg" class="img-right img-top small-img" alt="Bereal">
+
+
+    </div>
+  </div>
+
+<a href="Page5.html"><img src="Tree.png" class="tree-left" alt="Tree"></a>
+<a href="Page7.html"><img src="Tree.png" class="tree-right" alt="Tree"></a>
+<a href="credits page.html"><img src="Pump-Orange.png" class="pumpkin pumpkin-left" alt="Pump" title="Credits Page"></a>
+<img src="Pump-Orange.png" class="pumpkin pumpkin-right" alt="Pump">
+
+<a href="Page7.html"><img src="Right arrow.png" class="arrow-right" alt=" Right Arrow" ></a>
+<a href="Page5.html"><img src="left arrow.png" class="arrow-left" alt="Left Arrow" ></a>
+
+
+
+</body>
+</html>
